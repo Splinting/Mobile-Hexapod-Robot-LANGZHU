@@ -5,7 +5,7 @@
 
 功能展示视频：https://www.bilibili.com/video/BV1yg411Q7tu
 
-## 开源内容
+## 开源内容（还没更新完……）
 * 3D建模图纸
 * 数学建模的metlab代码和simulink仿真文件
 * 硬件方案&bom表
