@@ -32,10 +32,11 @@ end
 
 %% 生成工作空间
 j3bias=10.91;
-% stdLeg=genLeg(0,0,0,0,'workspace');
+stdLeg=genLeg(0,0,0,0,'workspace');
 
 
 %高机位
+
 stdLeg.links(1).qlim=[-30,30]./180.*pi;     %三个关节角的限制
 stdLeg.links(2).qlim=[-180,0]./180.*pi;
 stdLeg.links(3).qlim=[90-j3bias,180-j3bias]./180.*pi;
@@ -49,7 +50,7 @@ for i=1:num
     q2=stdLeg.links(2).qlim(1)+rand*(stdLeg.links(2).qlim(2)-stdLeg.links(2).qlim(1));
     q3=stdLeg.links(3).qlim(1)+rand*(stdLeg.links(3).qlim(2)-stdLeg.links(3).qlim(1));
 
-    q=[q1,q2,q3,0];
+    q=[q1,q2,q3];
     T=stdLeg.fkine(q);
     P(i,:)=transl(T);
 end
@@ -57,7 +58,7 @@ end
 figure(2)
 view(3)
 plot3(P(:,1),P(:,2),P(:,3),'r.');
-stdLeg.plot([0,0,0,0],'tilesize',100);
+stdLeg.plot([0,0,0],'tilesize',100);
 hold on
 
 %低机位
@@ -72,7 +73,7 @@ for i=1:num
     q2=stdLeg.links(2).qlim(1)+rand*(stdLeg.links(2).qlim(2)-stdLeg.links(2).qlim(1));
     q3=stdLeg.links(3).qlim(1)+rand*(stdLeg.links(3).qlim(2)-stdLeg.links(3).qlim(1));
 
-    q=[q1,q2,q3,0];
+    q=[q1,q2,q3];
     T=stdLeg.fkine(q);
     P(i,:)=transl(T);
 end
