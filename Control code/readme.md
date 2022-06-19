@@ -1,11 +1,13 @@
 ﻿# 1.项目介绍
 我们的整个项目是基于Dynamixel公司的DynamixelSDK构建的，包括了调试自稳模式PID的balance.py文件和实现卡尔曼滤波的Kalman.py文件和实现所有功能（包括移动和自稳）的final.py文件。
+Kalman.py文件参考了，其余代码为自己编写
+https://github.com/rocheparadox/Kalman-Filter-Python-for-mpu6050
 # 2.环境配置
 
 由于我们的项目是基于ROBOTIS公司的SDK设计的我们首先要配置SDK的环境。具体流程：
 首先克隆我们的库
 ```
-git clone https://github.com/Splinting/Mobile-Hexapod-Robot-LANGZHU/MainControl
+git clone https://github.com/Splinting/Mobile-Hexapod-Robot-LANGZHU
 ```
 接着依据我们的setup.py预处理文件
 ```

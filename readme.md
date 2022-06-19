@@ -1,4 +1,6 @@
 # Mobile-Hexapod-Robot-LANGZHU
+https://github.com/Splinting/Mobile-Hexapod-Robot-LANGZHU</br>
+</br>
 本项目用来交南方科技大学2022春季学期ME102、ME321、ME331的课程项目</br>
 本项目为一个移动六足机器人，实现了基本移动（前后左右&旋转）和自动姿态调整功能（斜面自稳）</br>
 功能展示视频：https://www.bilibili.com/video/BV1yg411Q7tu</br>
