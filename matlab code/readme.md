@@ -1,5 +1,5 @@
 # Matlab脚本及Simulink仿真文件
-里面的matlab函数和matlab简单仿真是基于Robot Toolbox for Matlab的，官网地址：https://petercorke.com/toolboxes/robotics-toolbox/</br>
+里面的matlab函数和matlab简单仿真是基于Robot Toolbox for Matlab的，下载和安装见官网地址：https://petercorke.com/toolboxes/robotics-toolbox/</br>
 如果想要不依靠这个工具箱来实现运动学算法部分，可以参考simulink里面的函数模块里面的写法。</br>
 ## 目录
 1. [文件综述以及用处](#index1)
